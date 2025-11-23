@@ -31,6 +31,8 @@ Academic Researchers: Need high-precision functions and time/memory benchmarks f
 
 Students (Mathematics, CS, Engineering): Require tools to verify calculations and learn about algorithm efficiency (e.g., comparing iterative vs. recursive factorial).
 
+People working in feilds like cybersecurity,cryptography and related feilds 
+
 Competitive Programmers: Need fast, optimized implementations of number theory and combinatorial functions.
 
 Data Scientists/Engineers: Need robust utility functions for pre-processing or feature engineering in data pipelines.
