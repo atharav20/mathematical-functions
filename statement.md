@@ -1,13 +1,13 @@
 
-1. Problem Statement
+**1. Problem Statement**
 
-Complex mathematical calculations, ranging from basic combinatorics to number theory, require efficient and reliable implementations. For research, academic, and competitive programming contexts, knowing the computational overhead (execution time and memory usage) is as crucial as obtaining the correct result. The problem is to create a centralized, well-tested library that not only accurately computes these functions but also provides immediate, measured performance metrics for efficiency comparison.
+The core problem is to accurately implement algorithms for calculating n!, approximating	(‹), finding p(n),etc and then quantitatively assess their runtime and memory usage to understand the computational trade-offs inherent in different algorithmic approaches.
 
-2. Scope of the Project
+**2. Scope of the Project**
 
 The project focuses on developing a core library of mathematical algorithms, each implemented with a focus on optimization.
 
-Inclusions:
+**Inclusions:**
 
 Implementation of all core functions identified in the current repository (Factorial, Riemann Zeta Approximation, Integer Partition Function).
 
@@ -23,7 +23,7 @@ Implementation of advanced machine learning or statistical modeling tools.
 
 Handling of functions requiring external datasets (unless explicitly added in future phases).
 
-3. Target Users
+**3. Target Users**
 
 The primary users of this project are individuals who require reliable mathematical computations and an understanding of computational complexity.
 
@@ -35,7 +35,7 @@ Competitive Programmers: Need fast, optimized implementations of number theory a
 
 Data Scientists/Engineers: Need robust utility functions for pre-processing or feature engineering in data pipelines.
 
-4. High-Level Features (Mathematical Functions)
+**4. High-Level Features (Mathematical Functions)**
 
 The project will provide the following specific mathematical capabilities, derived from the analyzed code:
 
