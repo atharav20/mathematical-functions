@@ -58,3 +58,6 @@ $\Delta t$ (Time) and $\Delta M$ (Memory)
 Measures and displays the execution time (in seconds) and peak memory usage (in bytes/kilobytes) immediately following the computation of any featured mathematical function, providing a key benchmark for efficiency.
 
 Note: The memory and time profiling are considered a core meta-feature that applies to all mathematical functions in the library.
+
+Author:-
+Atharav Balaji Khonde
