@@ -1,4 +1,4 @@
-  **Mathematical Functions and Algorithmic Performance Analysis**
+  **Mathematical Functions**
 
 **Overview**
 
