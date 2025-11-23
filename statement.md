@@ -41,29 +41,15 @@ Data Scientists/Engineers: Need robust utility functions for pre-processing or f
 
 The project will provide the following specific mathematical capabilities, derived from the analyzed code:
 
-Program Name
+Program Name :- Mathematical Function :- High-Level Feature Description
 
-Mathematical Function
+Factorial Calculator :- $n!$ (Factorial) :- Computes the factorial of a non-negative integer $n$, defined as the product of all positive integers less than or equal to $n$: $n! = \prod_{k=1}^n k$. The feature provides large integer support and calculates execution time and memory footprint.
 
-High-Level Feature Description
+Riemann Zeta Approximator :- $\zeta(s)$ (Riemann Zeta Function) :- Approximates the value of the Riemann Zeta function $\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}$ for a real parameter $s$. The feature takes $s$ and a finite number of terms $N$ as input, computing the partial sum $\sum_{n=1}^N \frac{1}{n^s}$ for approximation.
 
-Factorial Calculator
+Integer Partition Counter :- $p(n)$ (Partition Function) :- Calculates $p(n)$, the number of ways to write the integer $n$ as a sum of positive integers. This feature utilizes dynamic programming for efficient computation and is essential in number theory and combinatorics.
 
-$n!$ (Factorial)
-
-Computes the factorial of a non-negative integer $n$, defined as the product of all positive integers less than or equal to $n$: $n! = \prod_{k=1}^n k$. The feature provides large integer support and calculates execution time and memory footprint.
-
-Riemann Zeta Approximator
-
-$\zeta(s)$ (Riemann Zeta Function)
-
-Approximates the value of the Riemann Zeta function $\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}$ for a real parameter $s$. The feature takes $s$ and a finite number of terms $N$ as input, computing the partial sum $\sum_{n=1}^N \frac{1}{n^s}$ for approximation.
-
-Integer Partition Counter
-
-$p(n)$ (Partition Function)
-
-Calculates $p(n)$, the number of ways to write the integer $n$ as a sum of positive integers. This feature utilizes dynamic programming for efficient computation and is essential in number theory and combinatorics.
+And many more functions 
 
 Performance Monitor
 
