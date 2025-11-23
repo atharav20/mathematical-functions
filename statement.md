@@ -1,83 +1,72 @@
-Project Definition: Algorithmic Performance Benchmarking Tool (AlgoBench)
 
 1. Problem Statement
 
-Researchers, students, and engineers working in scientific computing frequently implement complex mathematical algorithms (such as number theory functions, summation series, or optimization routines). A critical challenge is accurately assessing and comparing the computational efficiency—specifically, the time complexity and memory usage—of different implementations. Existing general-purpose profilers are often too complex, lack integrated visualization for comparative analysis, and require significant setup, leading to inefficient code and delayed discovery.
-
-The core problem is the lack of a simple, specialized, web-based environment for quickly inputting, executing, and visually benchmarking mathematical algorithms against varying input sizes and constraints.
+Complex mathematical calculations, ranging from basic combinatorics to number theory, require efficient and reliable implementations. For research, academic, and competitive programming contexts, knowing the computational overhead (execution time and memory usage) is as crucial as obtaining the correct result. The problem is to create a centralized, well-tested library that not only accurately computes these functions but also provides immediate, measured performance metrics for efficiency comparison.
 
 2. Scope of the Project
 
-The project is to develop AlgoBench, a web-based utility designed to analyze the performance characteristics of user-provided mathematical algorithms.
+The project focuses on developing a core library of mathematical algorithms, each implemented with a focus on optimization.
 
 Inclusions:
 
-Integrated Code Editor: A clean, browser-based editor supporting Python code input.
+Implementation of all core functions identified in the current repository (Factorial, Riemann Zeta Approximation, Integer Partition Function).
 
-Performance Metrics: Automatic calculation of execution time and peak memory usage for submitted algorithms.
+Integration of consistent performance monitoring (time and memory profiling) for every function execution.
 
-Input Range Testing: Functionality to execute the algorithm across a user-defined range of inputs ($N$) to generate performance data.
-
-Comparative Visualization: Interactive charts (line graphs, scatter plots) showing Time vs. $N$ and Memory vs. $N$.
-
-Algorithm Library: A collection of pre-loaded mathematical examples (e.g., recursive vs. iterative factorial, different implementations of the partition function) for immediate testing.
+A user-friendly interface (e.g., command-line tool or simple web API) for inputting parameters and viewing results alongside performance metrics.
 
 Exclusions:
 
-Support for Non-Python Languages: Initial focus is Python only.
+A full-fledged graphing or visualization engine for function outputs.
 
-Parallel Computing/GPU Benchmarking: Advanced benchmarking for multi-threading or hardware acceleration is out of scope.
+Implementation of advanced machine learning or statistical modeling tools.
 
-Persistent User Accounts: Data storage will be session-based; no sign-up or permanent user profiles are included in the initial release.
+Handling of functions requiring external datasets (unless explicitly added in future phases).
 
 3. Target Users
 
-User Group
+The primary users of this project are individuals who require reliable mathematical computations and an understanding of computational complexity.
 
-Primary Role
+Academic Researchers: Need high-precision functions and time/memory benchmarks for simulations and theoretical work.
 
-Key Needs & Pain Points
+Students (Mathematics, CS, Engineering): Require tools to verify calculations and learn about algorithm efficiency (e.g., comparing iterative vs. recursive factorial).
 
-Computer Science Students
+Competitive Programmers: Need fast, optimized implementations of number theory and combinatorial functions.
 
-Learning algorithm analysis and data structures.
+Data Scientists/Engineers: Need robust utility functions for pre-processing or feature engineering in data pipelines.
 
-Need a visual way to confirm theoretical Big O notation (e.g., $O(N^2)$ vs. $O(N \log N)$) through practical execution.
+4. High-Level Features (Mathematical Functions)
 
-Computational Mathematicians
+The project will provide the following specific mathematical capabilities, derived from the analyzed code:
 
-Implementing and optimizing complex formulas (e.g., series approximations, numerical solvers).
+Program Name
 
-Need precise memory and time profiles to choose the most efficient routine for large-scale calculations.
+Mathematical Function
 
-Data Scientists / ML Engineers
+High-Level Feature Description
 
-Developing custom pre-processing or feature engineering functions.
+Factorial Calculator
 
-Need to quickly test custom functions for bottlenecks before deploying them in production pipelines.
+$n!$ (Factorial)
 
-4. High-Level Features
+Computes the factorial of a non-negative integer $n$, defined as the product of all positive integers less than or equal to $n$: $n! = \prod_{k=1}^n k$. The feature provides large integer support and calculates execution time and memory footprint.
 
-A. Code Input and Execution
+Riemann Zeta Approximator
 
-Python Editor: Syntax-highlighted editor with simple execution controls.
+$\zeta(s)$ (Riemann Zeta Function)
 
-Dynamic Input Definition: Users can define the argument variables for their algorithm and specify the range and steps for testing.
+Approximates the value of the Riemann Zeta function $\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}$ for a real parameter $s$. The feature takes $s$ and a finite number of terms $N$ as input, computing the partial sum $\sum_{n=1}^N \frac{1}{n^s}$ for approximation.
 
-B. Automated Benchmarking
+Integer Partition Counter
 
-Execution Timer: Measures total wall-clock time and CPU time for the function call.
+$p(n)$ (Partition Function)
 
-Memory Profiler: Tracks peak memory allocation used by the function during execution (similar to tracemalloc in your example).
+Calculates $p(n)$, the number of ways to write the integer $n$ as a sum of positive integers. This feature utilizes dynamic programming for efficient computation and is essential in number theory and combinatorics.
 
-Repeatable Testing: Automatically runs the algorithm multiple times for the same input and calculates an average to minimize external noise.
+Performance Monitor
 
-C. Visualization and Comparison
+$\Delta t$ (Time) and $\Delta M$ (Memory)
 
-Performance Charts: Generates side-by-side or overlaid charts for:
+Measures and displays the execution time (in seconds) and peak memory usage (in bytes/kilobytes) immediately following the computation of any featured mathematical function, providing a key benchmark for efficiency.
 
-Time (ms) vs. Input Size ($N$).
-
-Memory (MB) vs. Input Size ($N$).
-
-Big O Overlay: Ability to overlay theoretical complexity curves (e.g., $N^2$, $N \log N$) onto the actual measured performance data for comparison.
+Note: The memory and time profiling are considered a core meta-feature that applies to all mathematical functions in the library.
